@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="cRT1eC" name="FDLReverb" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyName="Koitsumi">
+  <MAINGROUP id="bt9f7Q" name="FDLReverb">
+    <GROUP id="{F35DFCD8-9F39-5BCF-72E0-12EF7977174F}" name="Source">
+      <GROUP id="{573557D8-9495-2A63-0195-742B93FE43E3}" name="STFT">
+        <FILE id="S5N03B" name="HannWindow.h" compile="0" resource="0" file="Source/STFT/HannWindow.h"/>
+        <FILE id="FriDc1" name="Ooura_FFT.h" compile="0" resource="0" file="Source/STFT/Ooura_FFT.h"/>
+        <FILE id="KeFzA2" name="PostProcessor.h" compile="0" resource="0" file="Source/STFT/PostProcessor.h"/>
+        <FILE id="EYIgUQ" name="STFT.h" compile="0" resource="0" file="Source/STFT/STFT.h"/>
+      </GROUP>
+      <FILE id="MzRTF8" name="WaveTable.h" compile="0" resource="0" file="Source/WaveTable.h"/>
+      <FILE id="HJUw4m" name="MyDSP.h" compile="0" resource="0" file="Source/MyDSP.h"/>
+      <FILE id="kIIQ5x" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="ETx9fR" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="cBiXrO" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="SLoFzu" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="FDLReverb"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="FDLReverb"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:/juce-7.0.2-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
